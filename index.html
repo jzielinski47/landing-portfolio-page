@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Zieliński">
+    <title>Jakub Zieliński landing page</title>
+
+    <link rel="icon" href="./assets/gfx/img/logo.png" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/script/classes.js"></script>
+    <script src="./assets/script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="name" class="name">jakub <span class="color-it">zieliński</span></div>
+        <svg id="hamburger" data-name="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 20">
+            <title>hamburger-icon</title>
+            <rect class="bar" width="32" height="4" rx="2" />
+            <rect class="bar" y="8" width="32" height="4" rx="2" />
+            <rect class="bar" x="12" y="16" width="20" height="4" rx="2" />
+        </svg>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="hero-content-text">
+                <h1 class="hero-h1">Hey, I'm Jakub</h1>
+                <p class="hero-p">a web developer and visual artist</p>
+                <div class="hero-content-buttons">
+                    <a href="#cathegories"> <button class="btn-1" id="hero-btn-1">see my projects ></button> </a>
+                    <a href="mailto: jzielinski47dev@gmail.com">
+                        <button class="btn-1" id="hero-btn-2">let's
+                            talk!</button> </a>
+                </div>
+            </div>
+            <div class="hero-content-illustration">
+                <object data="./assets/gfx/svg/illustration/undraw_in_the_office_re_jtgc.svg" width="300" height="300">
+                </object>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content-area">
+        <div class="section">
+            <div class="about-me reveal">
+                <img id="about-me-image" />
+                <div class="about-me-text">
+                    <h2 class="title">about me</h2>
+                    <p class="description">Jestem młodym adeptem sztuki programowania, który już w młodym wieku
+                        zaprzysiągł, że tworzyć będzie rzeczy, które mu radość sprawiają i pożyteczne są dla świata.
+                        Nie spocznę więc dopóki, dopóty pracy nie odnajdę oraz efektu zamierzonego nie osiągnę.
+                    </p>
+                </div>
+            </div>
+            <div class="cathegories-list reveal" id="cathegories">
+                <div class="cathegory">
+                    <img src="./assets/gfx/svg/icons/SVG/ui-design-icon.svg" class="cathegory-icon" />
+                    <h2 class="title">ui/ux</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum
+                        nisi vel augue gravida, at rutrum tortor ultrices. In auctor nunc sed eleifend accumsan.
+                        Donec quis tellus lectus. Donec nec est porttitor.</p>
+                    <a href="#projects"><button class="btn-2">see more</button></a>
+                </div>
+
+                <div class="cathegory">
+                    <img src="./assets/gfx/svg/icons/SVG/design_1-icon.svg" class="cathegory-icon" />
+                    <h2 class="title">design</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum
+                        nisi vel augue gravida, at rutrum tortor ultrices. In auctor nunc sed eleifend accumsan.
+                        Donec quis tellus lectus. Donec nec est porttitor.</p>
+                    <a href="#projects"><button class="btn-2">see more</button></a>
+                </div>
+
+                <div class="cathegory">
+                    <img src="./assets/gfx/svg/icons/SVG/development_1-icon.svg" class="cathegory-icon" />
+                    <h2 class="title">development</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum
+                        nisi vel augue gravida, at rutrum tortor ultrices. In auctor nunc sed eleifend accumsan.
+                        Donec quis tellus lectus. Donec nec est porttitor.</p>
+                    <a href="#projects"><button class="btn-2">see more</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-area reveal" id="projects">
+        <div class="text-holder">
+            <h2 class="title">recent work</h2>
+            <p class="description">Lorem ipsum, dolor sit amet, consectetur adipiscing elit.
+                <br />Mauris arcu turpis, cursus sit amet porttitor sit amet.
+            </p>
+        </div>
+        <div class="projects-list">
+            <!-- <div class="project" id="project-1">
+                <div class="image-holder">
+                    <button id="project-1-btn" class="btn-3">launch project ></button>
+                    <img id="project-1-img" class="project-image" />
+                </div>
+                <p class="featured bold">featured</p>
+                <p class="project-name bold" id="project-1-name">airconnate</p>
+                <p class="technology bold" id="project-1-tech">Java Script & PHP</p>
+            </div> -->
+        </div>
+
+        <div class="button-handler">
+            <a href="#cathegories"> <button class="btn-2">see more projects ></button></a>
+            <a href="mailto: jzielinski47dev@gmail.com"><button class="btn-1">let's talk!</button></a>
+        </div>
+
+    </div>
+
+    <footer>
+        <small>Copyright &copy; Jakub Zieliński 2022<br /><span class="arr">All rights reserved</span></small>
+    </footer>
+
+</body>
+
+</html>

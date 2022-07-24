@@ -1,0 +1,10 @@
+{
+    "array": [
+        {
+            "id": 0,
+            "image": "url",
+            "name": "name",
+            "technology": "tech"
+        }
+    ]
+}
