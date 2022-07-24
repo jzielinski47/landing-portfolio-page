@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #6120D8;
-    --secondary-color: #A470FF;
+    --secondary-color: #cc20d8;
     --black: #000000;
     --white: #ffffff;
 }
@@ -320,6 +320,14 @@ a {
     font-weight: 500;
     color: var(--black);
     text-transform: none;
+}
+
+.description a {
+    color: var(--primary-color);
+}
+
+.description a:hover {
+    color: var(--secondary-color);
 }
 
 .cathegories-list {
