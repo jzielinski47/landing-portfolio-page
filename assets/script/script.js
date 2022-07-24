@@ -2,7 +2,7 @@ const projectList = document.querySelector('.projects-list')
 console.log(projectList)
 
 for (let i = 1; i <= 4; i++) {
-    let project = new Project(projectList, i, 'assets/img/project.jpg', 'projekt', 'Java Script')
+    let project = new Project(projectList, i, 'assets/img/project.jpg', 'project', 'Java Script')
 }
 
 function reveal() {
