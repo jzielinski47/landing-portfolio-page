@@ -511,8 +511,10 @@ a {
 footer {
     text-align: center;
     text-transform: capitalize;
-
     padding: 4em;
+    margin-top: 2.5em;
+
+    background: #ececec;
 }
 
 .arr {
@@ -530,6 +532,6 @@ html {
 }
 
 .reveal.active {
-    transform: translateY(-50px);
+    transform: translateY(-100px);
     opacity: 1;
 }
