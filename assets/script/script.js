@@ -11,7 +11,7 @@ function reveal() {
     for (let i = 0; i < queue.length; i++) {
 
         let elemTopDistance = queue[i].getBoundingClientRect().top;
-        let revealRange = 100;
+        let revealRange = 10;
 
         // console.log(elemTopDistance, window.innerHeight - revealRange)
 
