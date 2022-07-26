@@ -1,5 +1,5 @@
 const projectList = document.querySelector('.projects-list')
-console.log(projectList)
+// console.log(projectList)
 
 for (let i = 1; i <= 4; i++) {
     let project = new Project(projectList, i, 'assets/img/project.jpg', 'project', 'Java Script')
@@ -13,7 +13,7 @@ function reveal() {
         let elemTopDistance = queue[i].getBoundingClientRect().top;
         let revealRange = 100;
 
-        console.log(elemTopDistance, window.innerHeight - revealRange)
+        // console.log(elemTopDistance, window.innerHeight - revealRange)
 
         if (elemTopDistance < window.innerHeight - revealRange) {
             queue[i].classList.add('active')

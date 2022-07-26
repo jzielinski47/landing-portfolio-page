@@ -54,6 +54,17 @@ class Project {
                     p.classList.add('project-name')
                     p.id = 'project-' + this.id + '-name'
                     p.innerHTML = this.name
+                    
+                    p.onmouseenter = async () => {                        
+                        let content = this.name;
+                        p.innerHTML = ''
+                        for (let i = 0; i < content.length; i++) {
+                            await sleep(100)
+                            console.log(content[i])
+                            p.innerHTML += content[i]
+                        }
+                    }
+
                     break;
                 case 2:
                     p.classList.add('technology')
@@ -73,3 +84,6 @@ class Project {
 
 }
 
+const sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds))
+}

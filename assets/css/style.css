@@ -74,6 +74,9 @@ header {
     /* height: calc(100vh - 50px); */
     height: 100vh;
     /* filter: drop-shadow(176px 70px 53px rgba(0, 0, 0, 0.01)) drop-shadow(113px 45px 48px rgba(0, 0, 0, 0.04)) drop-shadow(63px 25px 41px rgba(0, 0, 0, 0.15)) drop-shadow(28px 11px 30px rgba(0, 0, 0, 0.26)) drop-shadow(7px 3px 17px rgba(0, 0, 0, 0.29)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3)) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
@@ -240,9 +243,9 @@ a {
 
 @media only screen and (max-width: 750px) {
 
-    .hero-content {
+    /* .hero-content {
         left: 5vw;
-    }
+    } */
 
     .hero-h1 {
         font-size: 35.75px;
@@ -514,7 +517,7 @@ footer {
     padding: 4em;
     margin-top: 2.5em;
 
-    background: #ececec;
+    background: #f2f2f2;
 }
 
 .arr {
