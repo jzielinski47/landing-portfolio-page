@@ -1,7 +1,8 @@
+// @ts-nocheck
 const projectList = document.querySelector('.projects-list')
 // console.log(projectList)
 
-for (let i = 1; i <= 4; i++) {
+for (let i = 1; i <= 6; i++) {
     let project = new Project(projectList, i, 'assets/img/project.jpg', 'project', 'Java Script')
 }
 
@@ -25,7 +26,7 @@ function reveal() {
 
 window.addEventListener('scroll', reveal);
 window.onload = () => {
-    document.querySelector('#name')?.classList.add('name-move')
-    document.querySelector('.hero-content-illustration')?.classList.add('illustration-move')
-    document.querySelector('.hero-content')?.classList.add('revealup')
+    // document.querySelector('#name')?.classList.add('name-move')
+    // document.querySelector('.hero-content-illustration')?.classList.add('illustration-move')
+    // document.querySelector('.hero-content')?.classList.add('revealup')
 }

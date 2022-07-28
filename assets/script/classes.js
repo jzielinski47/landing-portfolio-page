@@ -16,7 +16,7 @@ class Project {
         project.className = "project";
 
         let imageHolder = document.createElement('div')
-        imageHolder.className = "image-holder";
+        imageHolder.classList.add('image-nav')
 
         let link = document.createElement('a')
         let button = document.createElement('button')
@@ -26,7 +26,7 @@ class Project {
 
         let image = document.createElement('img')
         image.id = "project-" + this.id + "-img"
-        image.className = "project-image"
+        image.className = "default-image"
         // image.style.background = `url(${this.url})`        
         imageHolder.onmouseover = () => {
             image.classList.add('darken')
@@ -54,8 +54,8 @@ class Project {
                     p.classList.add('project-name')
                     p.id = 'project-' + this.id + '-name'
                     p.innerHTML = this.name
-                    
-                    p.onmouseenter = async () => {                        
+
+                    p.onmouseenter = async () => {
                         let content = this.name;
                         p.innerHTML = ''
                         for (let i = 0; i < content.length; i++) {

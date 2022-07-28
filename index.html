@@ -8,7 +8,7 @@
     <meta name="author" content="Jakub Zieliński">
     <title>Jakub Zieliński landing page</title>
 
-    <link rel="icon" href="./assets/gfx/img/logo.png" />
+    <link rel="icon" href="./assets/gfx/img/favicon/" />
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/script/classes.js"></script>
@@ -16,8 +16,10 @@
 </head>
 
 <body>
+    <div class="hud"></div>
+
     <header>
-        <div id="name" class="name">jakub <span class="color-it">zieliński</span></div>
+        <div id="name">jakub <span class="color-it">zieliński</span></div>
         <svg id="hamburger" data-name="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 20">
             <title>hamburger-icon</title>
             <rect class="bar" width="32" height="4" rx="2" />
@@ -28,9 +30,9 @@
 
     <div class="hero-section">
         <div class="hero-content">
-            <div class="hero-content-text">
-                <h1 class="hero-h1">Hey, I'm Jakub</h1>
-                <p class="hero-p">a web developer and visual artist</p>
+            <div class="hero-header">
+                <h1>Hey, I'm Jakub</h1>
+                <p>a web developer and visual artist</p>
                 <div class="hero-content-buttons">
                     <a href="#cathegories"> <button class="btn-1" id="hero-btn-1">see my projects ></button> </a>
                     <a href="mailto: jzielinski47dev@gmail.com">
@@ -38,68 +40,65 @@
                             talk!</button> </a>
                 </div>
             </div>
-            <div class="hero-content-illustration">
+            <div class="illustration">
                 <object data="./assets/gfx/svg/illustration/undraw_in_the_office_re_jtgc.svg" width="300" height="300">
                 </object>
             </div>
         </div>
     </div>
 
-    <div class="main-content-area">
-        <div class="section">
-            <div class="about-me reveal">
-                <img id="about-me-image" />
-                <div class="about-me-text">
-                    <h2 class="title">about me</h2>
-                    <p class="description">I am 18 year old <span class="color-it">computer science</span> student on my
-                        4th year at
-                        <a href="https://tl.krakow.pl/">Techinkum Łączności
-                            number 14</a> in Kraków, Poland.
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus, erat et tempus
-                            tempor, risus turpis hendrerit purus, et elementum enim lectus et felis. Morbi ac
-                            sollicitudin tortor, at rhoncus sem. Aenean dignissim nisi sed eros luctus viverra.</span>
-                    </p>
-                </div>
+    <div class="content-section" id="main">
+        <div class="section" id="about-me">
+            <img id="author-image" />
+            <div id="author-text">
+                <h2 class="title">about me</h2>
+                <p class="description">I am 18 year old <span class="color-it">computer science</span> student on my
+                    4th year at <a href="https://tl.krakow.pl/">Techinkum Łączności number 14</a> in Kraków, Poland.
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus, erat et tempus
+                        tempor, risus turpis hendrerit purus, et elementum enim lectus et felis. Morbi ac
+                        sollicitudin tortor, at rhoncus sem. Aenean dignissim nisi sed eros luctus viverra.</span>
+                </p>
             </div>
-            <div class="cathegories-list reveal" id="cathegories">
-                <div class="cathegory">
-                    <img src="./assets/gfx/svg/icons/SVG/ui-design-icon.svg" class="cathegory-icon" />
-                    <h2 class="title">ui/ux</h2>
-                    <p class="description">Deliberate Ui and Ux design for websites and mobile apps.</p>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus tempor
-                        magna, ut tincidunt enim iaculis quis.</p>
-                    <a href="#projects"><button class="btn-2">see more</button></a>
-                </div>
+        </div>
+        <div class="section" id="cathegories">
+            <div class="cathegory">
+                <img src="./assets/gfx/svg/icons/SVG/ui-design-icon.svg" class="cathegory-icon" />
+                <h2 class="title">ui/ux</h2>
+                <p class="description">Deliberate Ui and Ux design for websites and mobile apps.</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus tempor
+                    magna, ut tincidunt enim iaculis quis.</p>
+                <a href="#projects"><button class="btn-1">see more</button></a>
+            </div>
 
-                <div class="cathegory">
-                    <img src="./assets/gfx/svg/icons/SVG/design_1-icon.svg" class="cathegory-icon" />
-                    <h2 class="title">design</h2>
-                    <p class="description">Deliberate Ui and Ux design for websites and mobile apps.</p>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus tempor
-                        magna, ut tincidunt enim iaculis quis.</p>
-                    <a href="#projects"><button class="btn-2">see more</button></a>
-                </div>
+            <div class="cathegory">
+                <img src="./assets/gfx/svg/icons/SVG/design_1-icon.svg" class="cathegory-icon" />
+                <h2 class="title">design</h2>
+                <p class="description">Deliberate Ui and Ux design for websites and mobile apps.</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus tempor
+                    magna, ut tincidunt enim iaculis quis.</p>
+                <a href="#projects"><button class="btn-1">see more</button></a>
+            </div>
 
-                <div class="cathegory">
-                    <img src="./assets/gfx/svg/icons/SVG/development_1-icon.svg" class="cathegory-icon" />
-                    <h2 class="title">development</h2>
-                    <p class="description">Web & Game Development</p>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus tempor
-                        magna, ut tincidunt enim iaculis quis.</p>
-                    <a href="#projects"><button class="btn-2">see more</button></a>
-                </div>
+            <div class="cathegory">
+                <img src="./assets/gfx/svg/icons/SVG/development_1-icon.svg" class="cathegory-icon" />
+                <h2 class="title">development</h2>
+                <p class="description">Web & Game Development</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus tempor
+                    magna, ut tincidunt enim iaculis quis.</p>
+                <a href="#projects"><button class="btn-1">see more</button></a>
             </div>
         </div>
 
     </div>
 
-    <div class="content-area reveal" id="projects">
-        <div class="text-holder">
+    <div class="content-section" id="projects">
+        <div class="headline">
             <h2 class="title">recent work</h2>
             <p class="description">Lorem ipsum, dolor sit amet, consectetur adipiscing elit.
                 <br />Mauris arcu turpis, cursus sit amet porttitor sit amet.
             </p>
         </div>
+
         <div class="projects-list">
             <!-- <div class="project" id="project-1">
                 <div class="image-holder">
@@ -112,7 +111,7 @@
             </div> -->
         </div>
 
-        <div class="button-handler">
+        <div class="bottom-buttons">
             <a href="https://github.com/4duck7?tab=repositories"> <button class="btn-2">see more projects ></button></a>
             <a href="mailto: jzielinski47dev@gmail.com"><button class="btn-1">let's talk!</button></a>
         </div>
@@ -120,7 +119,7 @@
     </div>
 
     <footer>
-        <small>Copyright &copy; Jakub Zieliński 2022<br /><span class="arr">All rights reserved</span></small>
+        <small>Copyright &copy; Jakub Zieliński 2022<br /><span class="color-it bold">All rights reserved</span></small>
     </footer>
 
 </body>
