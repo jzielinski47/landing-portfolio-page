@@ -32,9 +32,9 @@ window.onload = () => {
     // document.querySelector('.hero-content')?.classList.add('revealup')
 }
 
-window.onscroll = () => {
-    let delay = setTimeout(() => {
-        document.querySelector('#arrow').style.display = 'none';
-    }, 600)
+// window.onscroll = () => {
+//     let delay = setTimeout(() => {
+//         document.querySelector('#arrow').style.display = 'none';
+//     }, 600)
 
-}
+// }
