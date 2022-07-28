@@ -24,9 +24,17 @@ function reveal() {
     }
 }
 
+
 window.addEventListener('scroll', reveal);
 window.onload = () => {
     // document.querySelector('#name')?.classList.add('name-move')
     // document.querySelector('.hero-content-illustration')?.classList.add('illustration-move')
     // document.querySelector('.hero-content')?.classList.add('revealup')
+}
+
+window.onscroll = () => {
+    let delay = setTimeout(() => {
+        document.querySelector('#arrow').style.display = 'none';
+    }, 600)
+
 }

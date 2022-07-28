@@ -87,9 +87,21 @@ header {
 /* || Hud */
 
 .hud {
-    height: 100%;
-    width: 100%;
-    z-index: 999;
+    position: fixed;
+    background: transparent;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 4em;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    animation-name: floatingAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 
@@ -353,6 +365,9 @@ button {
     box-sizing: border-box;
 
     height: 90%;
+
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .cathegory button {
@@ -455,7 +470,7 @@ button {
 
 .bottom-buttons button {
     display: block;
-    width: 40%;
+    width: 35%;
 }
 
 footer {
@@ -501,6 +516,18 @@ footer {
     transform: translateX(-25%);
 }
 
+@keyframes floatingAnim {
+    from {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(1em);
+    }
+}
+
 /* || Mobile View */
 
-@media only screen and (max-width: 750px) {}
+@media only screen and (max-width: 1200px) {}
