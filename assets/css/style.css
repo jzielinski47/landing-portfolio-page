@@ -330,7 +330,7 @@ button {
 }
 
 .section {
-    width: 55%;
+    width: 70%;
     height: 100%;
 
     display: flex;
@@ -381,14 +381,14 @@ button {
     text-align: center;
     box-sizing: border-box;
 
-    height: 90%;
+    height: 100%;
 
     overflow: hidden;
     box-sizing: border-box;
 }
 
 .cathegory button {
-    width: 100% auto;
+    width: 180px;
 
     margin-top: 25px;
 
@@ -540,7 +540,7 @@ footer {
 
 /* || Mobile View */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1040px) {
 
     .hero-content {
         display: flex;
