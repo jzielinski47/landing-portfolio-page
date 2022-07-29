@@ -21,6 +21,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.container {
+    overflow: hidden;
+}
+
 .color-it {
     color: var(--primary-color);
 }
@@ -30,7 +34,8 @@ a {
 }
 
 .title {
-    font-size: 18px;
+    font-size: 1.5em;
+    /*previously 18px */
     font-weight: 900;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -167,7 +172,7 @@ button {
     background: none;
 
     padding: 0.6em 3em;
-    line-height: 19px;
+    line-height: 23px;
 
     text-align: center;
     text-transform: uppercase;
@@ -417,6 +422,7 @@ button {
 }
 
 .headline {
+    max-width: 80%;
     text-align: center;
 }
 
@@ -595,8 +601,9 @@ footer {
 
 @media only screen and (max-width: 760px) {
 
-    body {
-        width: 100vw;
+
+    .content-section {
+        width: 100%;
     }
 
     .hero-section {
@@ -609,12 +616,29 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 1.5em;
-
+        font-size: 32px;
     }
 
     .hero-content p {
-        font-size: 1em;
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    #about-me .description {
+        text-align: justify;
+    }
+
+    .hero-content .btn-1 {
+        width: 100%;
+        font-size: 14px;
     }
 
     .hero-content-buttons {
@@ -622,20 +646,12 @@ footer {
         flex-direction: column;
     }
 
-    .hero-content .btn-1 {
-        width: 100%;
-        font-size: 12px;
-    }
-
-    #about-me {
-        min-width: none;
-    }
-
+    #about-me,
     #cathegories {
-        align-items: center;
-        max-width: none;
-        min-width: none;
+        min-width: 100%;
     }
+
+    #cathegories button {}
 
 
     #illustration {
@@ -643,5 +659,13 @@ footer {
         height: 250px;
     }
 
+    .default-image {
+        height: 15em;
+        width: 15em;
+    }
+
+    .bottom-buttons {
+        width: auto;
+    }
 
 }
