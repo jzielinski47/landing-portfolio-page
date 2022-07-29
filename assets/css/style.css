@@ -66,6 +66,10 @@ header {
     font-size: 16px;
     font-weight: 900;
     text-transform: uppercase;
+
+    position: absolute;
+    top: 1em;
+    left: 2.5em;
 }
 
 #hamburger {
@@ -319,7 +323,7 @@ button {
 }
 
 .section {
-    width: 50%;
+    width: 55%;
     height: 100%;
 
     display: flex;
@@ -333,6 +337,10 @@ button {
 }
 
 /* || About me */
+
+#about-me {
+    min-width: 740px;
+}
 
 #author-image {
     height: 6em;
@@ -357,6 +365,8 @@ button {
 
 #cathegories {
     align-items: center;
+    max-width: 900px;
+    min-width: 600px;
 }
 
 .cathegory {
@@ -398,12 +408,16 @@ button {
 
 /* || Projects */
 
+#projects {
+    margin-top: 10em;
+}
+
 .headline {
     text-align: center;
 }
 
 .projects-list {
-    width: 80%;
+    width: 90%;
     padding: 2.5em;
 
     display: flex;
@@ -470,7 +484,7 @@ button {
 
 .bottom-buttons button {
     display: block;
-    width: 35%;
+    width: 30em;
 }
 
 footer {
@@ -530,6 +544,64 @@ footer {
 
 /* || Mobile View */
 
-@media only screen and (max-width: 1200px) {
-    
+@media only screen and (max-width: 960px) {
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main {
+        height: 100%;
+    }
+
+    .hero-header {
+        order: 2;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cathegory {
+        width: 55%;
+    }
+
+    .cathegory button {
+        width: 100% auto;
+
+        position: relative;
+        margin-top: 25px;
+
+        z-index: 500;
+    }
+
+    #projects {
+        margin-top: 5em;
+    }
+
+    .bottom-buttons button {
+        display: block;
+        width: 20em;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .hero-section {
+        width: 100%;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
