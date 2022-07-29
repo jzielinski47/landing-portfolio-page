@@ -95,23 +95,21 @@ header {
 /* || Hud */
 
 .hud {
-    position: fixed;
-    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #arrow {
-    position: absolute;
-    bottom: 4em;
-    left: 0;
-    right: 0;
-    margin: auto;
-
+    margin-bottom: 5%;
     animation-name: floatingAnim;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
 
 /* || Hero Section */
 
@@ -508,10 +506,6 @@ footer {
 
 /* || Animations Classes */
 
-.hidden {
-    opacity: 0;
-}
-
 .darken {
     filter: brightness(30%) grayscale(1);
 }
@@ -538,18 +532,6 @@ footer {
 .anim.illustration {
     opacity: 1;
     transform: translateX(-25%);
-}
-
-@keyframes floatingAnim {
-    from {
-        opacity: 0;
-        transform: translateY(-1em);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(1em);
-    }
 }
 
 /* || Mobile View */
@@ -672,4 +654,44 @@ footer {
         min-width: 100px;
     }
 
+}
+
+/* || Arrows and Css Icons */
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg)
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: 150ms ease-in-out;
+}
+
+/* || Animations */
+
+@keyframes floatingAnim {
+    from {
+        opacity: 0;
+        transform: translateY(-1em);
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform-origin: center;
+        transform: translateY(2em) rotate(45deg);
+
+
+    }
+
+    100% {
+        transform: translateY(0em) rotate(45deg);
+        opacity: 0;
+    }
 }
