@@ -506,6 +506,10 @@ footer {
 
 /* || Animations Classes */
 
+.hidden {
+    opacity: 0;
+}
+
 .darken {
     filter: brightness(30%) grayscale(1);
 }
