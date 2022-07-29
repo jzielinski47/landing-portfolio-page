@@ -668,4 +668,8 @@ footer {
         width: auto;
     }
 
+    .btn-3 {
+        min-width: 100px;
+    }
+
 }
