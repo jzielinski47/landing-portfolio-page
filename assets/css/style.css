@@ -7,7 +7,9 @@
 
 /* || General styles */
 
-* {
+*,
+*::before,
+*::after {
     font-family: 'Inter', '', sans-serif;
 
     margin: 0 auto;
@@ -67,9 +69,6 @@ header {
     font-weight: 900;
     text-transform: uppercase;
 
-    position: absolute;
-    top: 1em;
-    left: 2.5em;
 }
 
 #hamburger {
@@ -145,6 +144,11 @@ header {
 .hero-content-buttons {
     display: flex;
     justify-content: space-between;
+}
+
+#illustration {
+    width: 300px;
+    height: 300px;
 }
 
 /* || Buttons and links */
@@ -603,5 +607,41 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    .hero-content h1 {
+        font-size: 1.5em;
+
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-content-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content .btn-1 {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #about-me {
+        min-width: none;
+    }
+
+    #cathegories {
+        align-items: center;
+        max-width: none;
+        min-width: none;
+    }
+
+
+    #illustration {
+        width: 250px;
+        height: 250px;
+    }
+
 
 }
