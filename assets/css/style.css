@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    /* --primary-color: #6120D8; */
-    --primary-color: #7e39ff;
+    --primary-color: #6120D8;
+    /* --primary-color: #7e39ff; */
     --secondary-color: #20ccd8;
     --whiteish: #f2f2f2;
     --blackish: #121212;
@@ -703,7 +703,7 @@ footer {
 }
 
 /* || Background */
-
+/* 
 #projects {
     color: white;
     background-color: var(--blackish);
@@ -711,7 +711,7 @@ footer {
 
 #projects .title {
     color: var(--whiteish)
-}
+} */
 
 footer {
     color: white;
