@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary-color: #6120D8;
+    /* --primary-color: #6120D8; */
+    --primary-color: #7e39ff;
     --secondary-color: #20ccd8;
+    --whiteish: #f2f2f2;
+    --blackish: #121212;
 }
 
 /* || General styles */
@@ -262,10 +265,6 @@ button {
 .btn-3 {
 
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     color: white;
 
@@ -315,11 +314,18 @@ button {
     color: black;
 }
 
+.projects-list .btn-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* || Main Content Area */
 
 .content-section {
     position: relative;
-    margin: 2.5em 0em;
+    padding: 2.5em 0em;
 }
 
 #main {
@@ -416,7 +422,8 @@ button {
 /* || Projects */
 
 #projects {
-    margin-top: 10em;
+    margin-top: 5em;
+    padding: 5em;
 }
 
 .headline {
@@ -499,9 +506,8 @@ footer {
     text-align: center;
     text-transform: capitalize;
     padding: 4em;
-    margin-top: 2.5em;
 
-    background: #f2f2f2;
+    background: ;
 }
 
 /* || Animations Classes */
@@ -572,10 +578,6 @@ footer {
         margin-top: 25px;
 
         z-index: 500;
-    }
-
-    #projects {
-        margin-top: 5em;
     }
 
     .bottom-buttons button {
@@ -698,4 +700,20 @@ footer {
         transform: translateY(0em) rotate(45deg);
         opacity: 0;
     }
+}
+
+/* || Background */
+
+#projects {
+    color: white;
+    background-color: var(--blackish);
+}
+
+#projects .title {
+    color: var(--whiteish)
+}
+
+footer {
+    color: white;
+    background-color: black;
 }
