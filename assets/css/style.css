@@ -507,7 +507,7 @@ footer {
     text-transform: capitalize;
     padding: 4em;
 
-    background: ;
+    background: var(--blackish);
 }
 
 /* || Animations Classes */
@@ -715,5 +715,14 @@ footer {
 
 footer {
     color: white;
-    background-color: black;
+}
+
+#mail {
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+}
+
+#mail:hover {
+    color: var(--primary-color);
 }
